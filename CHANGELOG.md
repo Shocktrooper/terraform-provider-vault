@@ -2,6 +2,7 @@
 
 IMPROVEMENTS:
 
+* Add support for fields (`default_extensions_template`, `exclude_cidr_list`, `port`) in `vault_ssh_secret_backend_role` resource.([#2747](https://github.com/hashicorp/terraform-provider-vault/pull/2747))
 * `vault_jwt_auth_backend`: Add support for write-only `oidc_client_secret_wo` and `oidc_client_secret_wo_version` fields to prevent storing sensitive OIDC client secrets in Terraform state. ([#2714](https://github.com/hashicorp/terraform-provider-vault/pull/2714))
 * `vault_kubernetes_auth_backend_config`: Add support for write-only `token_reviewer_jwt_wo` field with `token_reviewer_jwt_wo_version` to prevent sensitive JWT token from being stored in Terraform state ([#2715](https://github.com/hashicorp/terraform-provider-vault/pull/2715))
 * `vault_kubernetes_secret_backend`: Add write-only fields `service_account_jwt_wo` and `service_account_jwt_wo_version` for managing service account JWT credentials without storing them in state.([#2720](https://github.com/hashicorp/terraform-provider-vault/pull/2720))
